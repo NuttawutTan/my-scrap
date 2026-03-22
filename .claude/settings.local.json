@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node index.js)",
+      "Bash(node debug.js)",
+      "Bash(node -e \"const d = require\\(''./dividend.json''\\); console.log\\(''จำนวนหุ้น:'', d.length\\); console.log\\(''ตัวอย่าง 2 ตัวแรก:'', JSON.stringify\\(d.slice\\(0,2\\), null, 2\\)\\)\")"
+    ]
+  }
+}

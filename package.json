@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^23.5.1",
+    "sillyname": "^0.1.0",
+    "x-ray": "^2.3.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}

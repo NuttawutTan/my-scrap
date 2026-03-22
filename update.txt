@@ -1,0 +1,5 @@
+ทำวันที่ให้ compare วัน dividend กับ 2 สัปดาห์ล่วงหน้า
+ทำให้ upload ไปบน server ได้ => ดู vdo
+target buying, selling
+ทำให้ auto run
+เรียนเรื่อง (=>)

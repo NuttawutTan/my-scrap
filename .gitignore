@@ -1,0 +1,4 @@
+node_modules/
+dividend.json
+result.csv
+*.log
