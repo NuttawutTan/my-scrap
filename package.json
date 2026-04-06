@@ -4,7 +4,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "build": "pkg index.js --target node18-win-x64 --output dist/my-scrap.exe",
+    "build:linux": "pkg index.js --target node18-linux-x64 --output dist/my-scrap",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/puppeteer/**/*",
+      "node_modules/puppeteer-core/**/*"
+    ],
+    "targets": ["node18-win-x64"]
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +22,8 @@
     "sillyname": "^0.1.0",
     "x-ray": "^2.3.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
   "description": ""
 }
