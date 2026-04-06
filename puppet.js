@@ -28,7 +28,16 @@ function findChromePath() {
             return p;
         }
     }
-    console.log('[INFO] Using puppeteer bundled Chrome');
+    // Check if puppeteer has a bundled Chrome
+    try {
+        const { executablePath } = require('puppeteer');
+        const builtIn = executablePath();
+        if (fs.existsSync(builtIn)) {
+            console.log(`[INFO] Using puppeteer bundled Chrome: ${builtIn}`);
+            return builtIn;
+        }
+    } catch (e) {}
+    console.log('[INFO] No Chrome found - will let puppeteer try automatically');
     return undefined;
 }
 
